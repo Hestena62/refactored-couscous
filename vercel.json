@@ -14,10 +14,6 @@
       "dest": "/api/index.php"
     },
     {
-      "src": "/tutorial",
-      "dest": "/api/tutorial.php"
-    },
-    {
       "src": "/public/(.*)",
       "dest": "/$1"
     }
