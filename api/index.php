@@ -16,9 +16,9 @@ include 'src/header.php';
 
     <?php include __DIR__ . '/src/partials/resume-banner.php'; ?>
 
-    <?php include __DIR__ . 'api/src/partials/academic-path-header.php'; ?>
+    <?php include __DIR__ . '/src/partials/academic-path-header.php'; ?>
 
-    <?php include __DIR__ . 'apt/src/partials/learning-grid.php'; ?>
+    <?php include __DIR__ . '/src/partials/learning-grid.php'; ?>
 
     <?php include __DIR__ . '/src/partials/no-results.php'; ?>
 
