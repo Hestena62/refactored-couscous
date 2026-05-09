@@ -4,18 +4,41 @@
     "api/*.php": { "runtime": "vercel-php@0.9.0" }
   },
   "routes": [
-    {
-      "src": "/api/tutorial.php",
-      "headers": { "Location": "/tutorial" },
-      "status": 307
-    },
-    {
-      "src": "/",
-      "dest": "/api/index.php"
-    },
-    {
-      "src": "/public/(.*)",
-      "dest": "/$1"
-    }
+    { "src": "/", "dest": "/api/index.php" },
+    
+    { "src": "/about-me", "dest": "/api/about-me.php" },
+    { "src": "/about", "dest": "/api/about.php" },
+    { "src": "/assessment", "dest": "/api/assessment.php" },
+    { "src": "/contact", "dest": "/api/contact.php" },
+    { "src": "/curriculum", "dest": "/api/curriculum.php" },
+    { "src": "/dic", "dest": "/api/dic.php" },
+    { "src": "/games", "dest": "/api/games.php" },
+    { "src": "/help-center", "dest": "/api/help-center.php" },
+    { "src": "/mission", "dest": "/api/mission.php" },
+    { "src": "/oa", "dest": "/api/oa.php" },
+    { "src": "/parents", "dest": "/api/parents.php" },
+    { "src": "/privacy", "dest": "/api/privacy.php" },
+    { "src": "/research", "dest": "/api/research.php" },
+    { "src": "/search", "dest": "/api/search.php" },
+    { "src": "/settings", "dest": "/api/settings.php" },
+    { "src": "/skills-dictionary", "dest": "/api/skills-dictionary.php" },
+    { "src": "/standard", "dest": "/api/standard.php" },
+    { "src": "/students", "dest": "/api/students.php" },
+    { "src": "/teachers", "dest": "/api/teachers.php" },
+    { "src": "/terms-of-use", "dest": "/api/terms-of-use.php" },
+    { "src": "/wiki", "dest": "/api/wiki.php" },
+
+    { "src": "/assessment/(.*)", "dest": "/api/assessment/$1.php" },
+    { "src": "/levels/(.*)", "dest": "/api/levels/$1.php" },
+    { "src": "/library/read/(.*)", "dest": "/api/library/read/$1.php" },
+    { "src": "/library/(.*)", "dest": "/api/library/$1.php" },
+    { "src": "/research/DLDR/texts/(.*)", "dest": "/api/research/DLDR/texts/$1.php" },
+    { "src": "/research/DLDR/(.*)", "dest": "/api/research/DLDR/$1.php" },
+    { "src": "/student/(.*)", "dest": "/api/student/$1.php" },
+    { "src": "/test/(.*)", "dest": "/api/test/$1.php" },
+
+    { "handle": "filesystem" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
