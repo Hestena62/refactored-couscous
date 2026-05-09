@@ -1,0 +1,202 @@
+/* Wikipedia-style specific styles for wiki.php */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600&display=swap');
+
+:root {
+    --wiki-bg: #f6f6f6;
+    --wiki-content-bg: #ffffff;
+    --wiki-border: #a2a9b1;
+    --wiki-link: #0645ad;
+    --wiki-green-bg: #cef2e0;
+    --wiki-green-border: #a3bfb1;
+    --wiki-blue-bg: #cedff2;
+    --wiki-blue-border: #a3b0bf;
+    --wiki-grey-bg: #f8f9fa;
+    --wiki-serif: 'Libre Baskerville', serif;
+    --wiki-sans: 'Inter', sans-serif;
+}
+
+.wiki-container {
+    background-color: var(--wiki-bg);
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: var(--wiki-sans);
+    color: #202122;
+}
+
+.wiki-content {
+    background-color: var(--wiki-content-bg);
+    border: 1px solid var(--wiki-border);
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Sidebar Layout */
+.wiki-layout {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .wiki-layout {
+        grid-template-columns: 1fr;
+    }
+    .wiki-sidebar {
+        display: none; /* Hide sidebar on mobile or move to top? Wikipedia usually hides it */
+    }
+}
+
+.wiki-sidebar {
+    padding-right: 1.5rem;
+    border-right: 1px solid #eaecf0;
+}
+
+.sidebar-logo {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sidebar-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.sidebar-nav-section {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-nav-header {
+    color: #72777d;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: 2px;
+}
+
+.sidebar-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav-links li {
+    margin-bottom: 0.4rem;
+}
+
+.sidebar-nav-links a {
+    color: var(--wiki-link);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.sidebar-nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Page Sections */
+.mp-banner {
+    border: 1px solid var(--wiki-border);
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.mp-banner h1 {
+    font-family: var(--wiki-serif);
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.mp-box {
+    border: 1px solid var(--wiki-border);
+    background-color: var(--wiki-content-bg);
+    margin-bottom: 1rem;
+}
+
+.mp-h2 {
+    font-family: var(--wiki-serif);
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0;
+    border-bottom: 1px solid var(--wiki-border);
+}
+
+.mp-box-content {
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Specific Box Colors */
+.box-green .mp-h2 {
+    background-color: var(--wiki-green-bg);
+    border-bottom-color: var(--wiki-green-border);
+}
+
+.box-green {
+    border-color: var(--wiki-green-border);
+}
+
+.box-blue .mp-h2 {
+    background-color: var(--wiki-blue-bg);
+    border-bottom-color: var(--wiki-blue-border);
+}
+
+.box-blue {
+    border-color: var(--wiki-blue-border);
+}
+
+.box-grey .mp-h2 {
+    background-color: var(--wiki-grey-bg);
+}
+
+/* Two Column Grid for Boxes */
+.mp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .mp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Featured Content Styles */
+.featured-article img {
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    max-width: 150px;
+}
+
+.featured-article .read-more {
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.dyk-list, .itn-list, .otd-list {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.dyk-list li, .itn-list li, .otd-list li {
+    margin-bottom: 0.75rem;
+}
+
+.dyk-image {
+    float: right;
+    margin-left: 1rem;
+    border: 1px solid #f0f0f0;
+}
