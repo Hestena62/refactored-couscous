@@ -5,7 +5,7 @@
  * and the modern Tailwind-based theme.
  */
 
-$jsonFile = __DIR__ . '/../data/learning_levels.json';
+$jsonFile = __DIR__ . '/../../public/scripts/data/learning_levels.json';
 if (!file_exists($jsonFile)) {
     die("Error: JSON file not found at $jsonFile\n");
 }

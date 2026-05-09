@@ -12,7 +12,7 @@
 
     <!-- PWA & Mobile Meta Tags -->
     <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/assets/images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png">
+    <link rel="apple-touch-icon" href="/images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png">
     <meta name="theme-color" content="#4F46E5" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -42,10 +42,10 @@
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/assets/js/tailwind-config.js"></script>
+    <script src="/scripts/js/tailwind-config.js"></script>
 
     <!-- Custom Modern Styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/styles/css/styles.css">
 </head>
 
 <body class="light antialiased font-sans overflow-x-hidden selection:bg-primary selection:text-white">
@@ -106,7 +106,7 @@
                             <button type="button" id="user-menu-button" class="flex items-center gap-2 pl-3 pr-2 py-1 rounded-full bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-transparent focus:outline-none transition-all duration-300">
                                 <span class="text-sm font-medium text-gray-700 dark:text-gray-200 hidden sm:block">User</span>
                                 <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
-                                    <img src="/assets/images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png" alt="User Profile" class="w-full h-full object-cover">
+                                    <img src="/images/6791421e-7ca7-40bd-83d3-06a479bf7f36.png" alt="User Profile" class="w-full h-full object-cover">
                                 </div>
                                 <i id="user-menu-arrow" class="fas fa-chevron-down text-xs text-gray-500 dark:text-gray-400 transition-transform duration-300"></i>
                             </button>
@@ -158,5 +158,5 @@
         </div>
     </header>
 
-    <script src="/assets/js/a11y.js"></script>
-    <script src="/assets/js/core-ui.js"></script>
+    <script src="/scripts/js/a11y.js"></script>
+    <script src="/scripts/js/core-ui.js"></script>

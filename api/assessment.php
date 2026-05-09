@@ -9,7 +9,7 @@
 // 1. DYNAMIC CONFIGURATION LOADER
 // =========================================================================
 $assessmentId = isset($_GET['id']) ? preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['id']) : 'sample';
-$jsonFile = __DIR__ . "/data/assessments/{$assessmentId}.json";
+$jsonFile = __DIR__ . "/../public/scripts/data/assessments/{$assessmentId}.json";
 
 if (!file_exists($jsonFile)) {
     die("<div style='text-align:center; padding: 50px; font-family: sans-serif; color: #333;'><h1>Assessment Not Found</h1><p>The requested assessment could not be located.</p></div>");

@@ -28,4 +28,4 @@
         </div>
     </div>
 
-    <script src="/assets/js/announcements.js"></script>
+    <script src="/scripts/js/announcements.js"></script>

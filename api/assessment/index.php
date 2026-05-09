@@ -225,8 +225,8 @@ include '../src/header.php';
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="/assets/js/p-12.js"></script>
-<script src="/assets/js/AP.js"></script>
-<script src="/assets/js/assessment-page.js"></script>
+<script src="/scripts/js/p-12.js"></script>
+<script src="/scripts/js/AP.js"></script>
+<script src="/scripts/js/assessment-page.js"></script>
 
 <?php include '../src/footer.php'; ?>

@@ -54,7 +54,7 @@ include __DIR__ . '/../src/header.php';
                 <!-- Right Illustration -->
                 <div class="w-full lg:w-1/2 relative">
                     <div class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800 transform rotate-2 hover:rotate-0 transition-transform duration-700 ease-out group">
-                        <img src="/assets/images/student-hero.png" alt="Student Learning Illustration" class="w-full h-auto scale-105 group-hover:scale-100 transition-transform duration-700">
+                        <img src="/images/student-hero.png" alt="Student Learning Illustration" class="w-full h-auto scale-105 group-hover:scale-100 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
                         
                         <!-- Floating Achievement Badge -->

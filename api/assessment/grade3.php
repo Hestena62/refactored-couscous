@@ -138,7 +138,7 @@ include '../src/header.php';
     </div>
 </div>
 
-<script src="/assets/js/questionGenerator.js"></script>
+<script src="/scripts/js/questionGenerator.js"></script>
 <script>
     // Inline override/adapter for the specific Grade 3 page
     // This allows us to reuse the logic but control the initialization

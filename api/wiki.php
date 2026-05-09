@@ -43,7 +43,7 @@ include 'src/header.php';
 ?>
 
 <!-- Link to Wikipedia-specific CSS -->
-<link rel="stylesheet" href="/assets/css/wiki.css">
+<link rel="stylesheet" href="/styles/css/wiki.css">
 
 <div class="wiki-container">
     <div class="wiki-content">

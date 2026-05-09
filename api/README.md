@@ -21,7 +21,7 @@ Welcome to the **Hesten's Learning** repository! This is an adaptive, accessible
 
 - `/src/` - Contains reusable PHP components (Header, Footer).
 - `/Level/` - Educational content and course modules for different grade levels.
-- `/assets/` - Static assets including `/js/`, `/css/`, `/images/`, and `/fonts/`.
+- `/public/` - Static assets including `/scripts/js/`, `/styles/css/`, `/images/`, and `/styles/fonts/`.
 - `index.php` - The main dashboard and entry point.
 - `parents.php`, `teachers.php`, `students.php` - Portals for different user types.
 
